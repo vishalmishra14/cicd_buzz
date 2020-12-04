@@ -1,7 +1,7 @@
 from __future__ import print_function
 import random
 
-buzz_word = ('continuous testing', 'continuous integration',
+buzz1 = ('continuous testing', 'continuous integration',
     'continuous deployment', 'continuous improvement', 'devops')
 adjectives = ('complete', 'modern', 'self-service', 'integrated', 'end-to-end')
 adverbs = ('remarkably', 'enormously', 'substantially', 'significantly',
@@ -17,7 +17,7 @@ def sample(l, n=1):
 
 
 def generate_buzz():
-    buzz_terms = sample(buzz_word, 2)
+    buzz_terms = sample(buzz1, 2)
 
     phrase = ' '.join([sample(adjectives), buzz_terms[0], sample(adverbs),
                        sample(verbs), buzz_terms[1]])
